@@ -57,7 +57,8 @@ class PagesController < ApplicationController
   end
 
   def show
-    @planet = params[:name]
+    planet_param = params[:planet].to_sym
+    @planet = @@planets[planet_param]
   end
 
 end

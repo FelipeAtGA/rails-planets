@@ -1,0 +1,8 @@
+<h1>Informaion about this particular planet is:</h1>
+<ul>
+  <% @planet.each do |info| %>
+  <% info.each do |k| %>
+    <li><%= k %></li>
+  <% end %>
+  <% end %>
+</ul>
