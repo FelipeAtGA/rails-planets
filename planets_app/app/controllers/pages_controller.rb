@@ -61,4 +61,8 @@ class PagesController < ApplicationController
     @planet = @@planets[planet_param]
   end
 
+  def random
+    @planet = @@planets.to_a.sample
+  end
+
 end
