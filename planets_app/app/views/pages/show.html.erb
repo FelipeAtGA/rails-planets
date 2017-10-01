@@ -1,8 +1,28 @@
-<h1>Informaion about this particular planet is:</h1>
-<ul>
-  <% @planet.each do |info| %>
-  <% info.each do |k| %>
-    <li><%= k %></li>
-  <% end %>
-  <% end %>
-</ul>
+<header>
+  <h1>Welcome to the Ruby Planets app</h1>
+  <nav>
+    <ul>
+      <li>
+        <h3><%= link_to 'Home', root_path %></h3>
+      </li>
+      <li>|</li>
+      <li>
+        <h3><%= link_to 'All Planets', planets_path %></h3>
+      </li>
+      <li>|</li>
+      <li>
+        <h3><%= link_to 'Random planet', planets_random_path %></h3>
+      </li>
+      <li>|</li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <h1>Informaion about this particular planet is:</h1>
+  <ul id='planetInfo'>
+    <li><span>Planet:</span><span class="info"> <%= @planet[:name] %></span></li>
+    <li><span>Distance from earth:</span><span class="info"> <%= @planet[:distance_from_sun] %></span></li>
+    <li><span>Diameter:</span><span class="info"> <%= @planet[:diameter] %></span></li>
+    <li><span>Orbital period:</span><span class="info"> <%= @planet[:orbit_period] %></span></li>
+  </ul>
+</main>

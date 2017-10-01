@@ -13,3 +13,64 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  font-family: "Lucida Console", Monaco, monospace;
+  background-color: #000;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+main {
+  text-align: center;
+}
+
+main img {
+  width: 750px;
+}
+
+#planetInfo {
+  width: 500px;
+  margin: 0 auto;
+  padding: 40px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background: rgba(255,255,255,.7);
+  text-align: left;
+  line-height: 32px;
+  box-sizing: content-box;
+}
+
+#planetInfo > li {
+  display: block;
+}
+
+.planetsList {
+  text-transform: uppercase;
+  color: deeppink;
+}
+
+.info {
+  color: blue;
+}

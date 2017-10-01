@@ -1,7 +1,29 @@
+<header>
+  <h1>Welcome to the Ruby Planets app</h1>
+  <nav>
+    <ul>
+      <li>
+        <h3><%= link_to 'Home', root_path %></h3>
+      </li>
+      <li>|</li>
+      <li>
+        <h3><%= link_to 'All Planets', planets_path %></h3>
+      </li>
+      <li>|</li>
+      <li>
+        <h3><%= link_to 'Random planet', planets_random_path %></h3>
+      </li>
+      <li>|</li>
+    </ul>
+  </nav>
+</header>
+<main>
 <h1>Planets</h1>
-
-<div>
+<ul>
   <% @planets.each do |planet| %>
-    <a href=planets/<%= planet %> /><%= planet %></a>
+  <li>
+    <a class="planetsList" href=planets/<%= planet %> /><%= planet %></a>
+  </li>
   <% end %>
-</div>
+</ul>
+</main>
