@@ -1,7 +1,7 @@
 <h1>Planets</h1>
 
 <div>
-  <%= @planets.each do |planet| %>
-    <p><%= planet %></p>
+  <% @planets.each do |planet| %>
+    <a href=planets/<%= planet %> /><%= planet %></a>
   <% end %>
 </div>

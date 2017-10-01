@@ -1,5 +1,21 @@
-<h1>Welcome to the Ruby Planets app</h1>
-<%= link_to 'View a list of Planets', planets_path %>
-<div>
-  <img src='https://iwsmt-content-ok2nbdvvyp8jbrhdp.stackpathdns.com/2282013232750iAtC2afkODS6U.gif' />
-</div>
+<header>
+  <nav>
+    <ul>
+      <li>
+        <h3><%= link_to 'View a list of Planets', planets_path %></h3>
+      </li>
+      <li>
+        <h3><%= link_to 'Random planet', planets_random_path %></h3>
+      </li>
+      <li>
+        <h3><%= link_to 'Home', root_path %></h3>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <h1>Welcome to the Ruby Planets app</h1>
+  <div>
+    <img src='https://iwsmt-content-ok2nbdvvyp8jbrhdp.stackpathdns.com/2282013232750iAtC2afkODS6U.gif' />
+  </div>
+</main>
