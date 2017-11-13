@@ -1,7 +1,5 @@
 # HOMEWORK: RAILS PLANETS!!!
 
-![orbits](https://iwsmt-content-ok2nbdvvyp8jbrhdp.stackpathdns.com/2282013232750iAtC2afkODS6U.gif)
-
 Tonight you'll be making a little baby rails app about PLANETS!!!! It'll be super similar to today's Compliments app lab. Gotta get those reps in!!! 💪💪💪
 
 [Here is your planet object!](./planets.rb) Use it wisely...
