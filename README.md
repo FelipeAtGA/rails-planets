@@ -11,7 +11,7 @@ The objective of this app is to use routes & views using the planet object with 
 
 ### Additionally!!
 
-- Styled up using Flex.
+- Styled up using Flexbox.
 
 ## 🚀 Completion looks like:
 
